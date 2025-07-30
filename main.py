@@ -25,7 +25,7 @@ def password_value(length):
     """
     Generate a password of the given length using random characters from the pool.
     """
-    return ''.join(secrets.choice(chars) for x in range(1, length))
+    return ''.join(secrets.choice(chars) for x in range(length))
 5
 # Get user input and generate the password
 length = get_password_length()
